@@ -33,6 +33,8 @@ public class WunschlisteController {
         Wunschliste exWunschliste = wunschlisteRepository.findById(id).get();
         Assert.notNull(exWunschliste, "Task not found");
         exWunschliste.setSelectedHosen(wunschliste.getSelectedHosen());
+        exWunschliste.setSelectedSchuhe(wunschliste.getSelectedSchuhe());
+        exWunschliste.setSelectedShirts(wunschliste.getSelectedShirts());
         wunschlisteRepository.save(exWunschliste);
 
     }

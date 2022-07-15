@@ -71,4 +71,20 @@ public class Wunschliste {
     public Set<Hose> getSelectedHosen() {
         return selectedHosen;
     }
+
+    public Set<Shirt> getSelectedShirts() {
+        return selectedShirts;
+    }
+
+    public void setSelectedShirts(Set<Shirt> selectedShirts) {
+        this.selectedShirts = selectedShirts;
+    }
+
+    public Set<Schuhe> getSelectedSchuhe() {
+        return selectedSchuhe;
+    }
+
+    public void setSelectedSchuhe(Set<Schuhe> selectedSchuhe) {
+        this.selectedSchuhe = selectedSchuhe;
+    }
 }

@@ -22,4 +22,5 @@ public class HoseController {
     public List<Hose> getHosen(){
         return hoseRepository.findAll();
     }
+
 }
