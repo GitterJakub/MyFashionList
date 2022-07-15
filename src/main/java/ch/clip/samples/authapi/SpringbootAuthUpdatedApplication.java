@@ -2,6 +2,8 @@ package ch.clip.samples.authapi;
 
 import ch.clip.samples.authapi.hose.Hose;
 import ch.clip.samples.authapi.hose.HoseRepository;
+import ch.clip.samples.authapi.wunschliste.Wunschliste;
+import ch.clip.samples.authapi.wunschliste.WunschlisteRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +39,8 @@ public class SpringbootAuthUpdatedApplication {
 	}
 
 	@Bean
-	public CommandLineRunner demo(TaskRepository repository, AppUserRepository userRepository) {
+	public CommandLineRunner demo(TaskRepository repository, AppUserRepository userRepository,
+								  HoseRepository hoseRepository, WunschlisteRepository wunschlisteRepository) {
 		return (args) -> {
 			// save a couple of tasks
 			Task t1 = new Task("Dinner with my Family");
@@ -49,7 +52,7 @@ public class SpringbootAuthUpdatedApplication {
 			repository.save(t3);
 
 			Hose adidas = new Hose("Adidas Hose grün", "grün", "adidas", 34.5);
-
+			hoseRepository.save(adidas);
 
 			// fetch all tasks
 			log.info("Customers found with findAll():");
@@ -74,6 +77,9 @@ public class SpringbootAuthUpdatedApplication {
 			AppUser u2 = new AppUser("user1", "123");
 			AppUser u3 = new AppUser("user2", "123");
 			AppUser u4 = new AppUser("user4-service", "123");
+			AppUser u5 = new AppUser("moin", "123");
+
+
 
 			
 			u1.setTask(t1);
@@ -82,6 +88,13 @@ public class SpringbootAuthUpdatedApplication {
 			userRepository.save(u1);
 			userRepository.save(u2);
 			userRepository.save(u3);
+
+
+			Wunschliste w1 = new Wunschliste();
+			w1.setUser(u5);
+			wunschlisteRepository.save(w1);
+			userRepository.save(u5);
+
 
 			taskUserService.addTask(u4, 3L);
 			

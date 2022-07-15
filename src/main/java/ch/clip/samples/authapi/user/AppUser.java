@@ -1,14 +1,9 @@
 package ch.clip.samples.authapi.user;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 import ch.clip.samples.authapi.task.Task;
+import ch.clip.samples.authapi.wunschliste.Wunschliste;
 
 @Entity
 public class AppUser {
@@ -21,6 +16,9 @@ public class AppUser {
     @ManyToOne
     @JoinColumn(name = "task_id", referencedColumnName = "id")
     private Task task;
+
+    @OneToOne(mappedBy = "user")
+    private Wunschliste wunschliste;
 
     public AppUser() {
         super();

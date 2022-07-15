@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34378f4a-caca-4613-9202-a7198ce97dd7" name="Default Changelist" comment="Wunschliste hinzugefügt mit Controller und Repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/hose/Hose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/hose/HoseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/hose/HoseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/schuhe/Schuhe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/schuhe/SchuheController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/schuhe/SchuheRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/shirt/Shirt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/shirt/ShirtController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/shirt/ShirtRepository.java" afterDir="false" />
+    <list default="true" id="34378f4a-caca-4613-9202-a7198ce97dd7" name="Default Changelist" comment="Hinzugefügt  Hose, Schuhe und Shirt. Mit den jeweiligen Controllern und Repositorys. Noch keine Fremdschlüssel.">
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
@@ -22,7 +13,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ch/clip/samples/authapi/SpringbootAuthUpdatedApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ch/clip/samples/authapi/SpringbootAuthUpdatedApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ch/clip/samples/authapi/user/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ch/clip/samples/authapi/user/AppUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/SpringbootAuthUpdatedApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/SpringbootAuthUpdatedApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/user/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/user/AppUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/wunschliste/Wunschliste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/wunschliste/Wunschliste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -319,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657867241677</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Hinzugefügt  Hose, Schuhe und Shirt. Mit den jeweiligen Controllern und Repositorys. Noch keine Fremdschlüssel.">
+      <created>1657870763286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657870763286</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +339,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setup Project" />
     <MESSAGE value="Wunschliste hinzugefügt mit Controller und Repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wunschliste hinzugefügt mit Controller und Repository" />
+    <MESSAGE value="Hinzugefügt  Hose, Schuhe und Shirt. Mit den jeweiligen Controllern und Repositorys. Noch keine Fremdschlüssel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Hinzugefügt  Hose, Schuhe und Shirt. Mit den jeweiligen Controllern und Repositorys. Noch keine Fremdschlüssel." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/springboot_auth_updated$SpringbootAuthUpdatedApplication.ic" NAME="SpringbootAuthUpdatedApplication Coverage Results" MODIFIED="1594140624855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
