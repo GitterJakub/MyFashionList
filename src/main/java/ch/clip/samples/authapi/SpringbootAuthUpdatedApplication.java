@@ -1,5 +1,7 @@
 package ch.clip.samples.authapi;
 
+import ch.clip.samples.authapi.hose.Hose;
+import ch.clip.samples.authapi.hose.HoseRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +47,9 @@ public class SpringbootAuthUpdatedApplication {
 			repository.save(t1);
 			repository.save(t2);
 			repository.save(t3);
+
+			Hose adidas = new Hose("Adidas Hose grün", "grün", "adidas", 34.5);
+
 
 			// fetch all tasks
 			log.info("Customers found with findAll():");

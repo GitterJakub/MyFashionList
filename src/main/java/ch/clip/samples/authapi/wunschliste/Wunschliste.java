@@ -12,4 +12,6 @@ public class Wunschliste {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    //TODO Fremdschlüssel vom User, Hose, Schuhe, Shirt
+
 }
