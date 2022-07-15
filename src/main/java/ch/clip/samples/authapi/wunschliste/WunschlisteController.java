@@ -1,9 +1,8 @@
 package ch.clip.samples.authapi.wunschliste;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.util.Assert;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,5 +21,21 @@ public class WunschlisteController {
     public List<Wunschliste> getWunschlisten(){
         return wunschlisteRepository.findAll();
     }
+
+    @PostMapping
+    public void addWunschliste(@RequestBody Wunschliste wunschliste){
+        wunschlisteRepository.save(wunschliste);
+
+    }
+
+    @PutMapping("/{id}")
+    public void editWunschliste(@PathVariable long id, @RequestBody Wunschliste wunschliste){
+        Wunschliste exWunschliste = wunschlisteRepository.findById(id).get();
+        Assert.notNull(exWunschliste, "Task not found");
+        exWunschliste.setSelectedHosen(wunschliste.getSelectedHosen());
+        wunschlisteRepository.save(exWunschliste);
+
+    }
+
 
 }

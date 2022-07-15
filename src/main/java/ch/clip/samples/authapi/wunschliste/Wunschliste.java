@@ -68,5 +68,7 @@ public class Wunschliste {
         this.selectedHosen = selectedHosen;
     }
 
-
+    public Set<Hose> getSelectedHosen() {
+        return selectedHosen;
+    }
 }
