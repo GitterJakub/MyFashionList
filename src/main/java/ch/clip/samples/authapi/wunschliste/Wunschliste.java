@@ -1,8 +1,12 @@
 package ch.clip.samples.authapi.wunschliste;
 
+import ch.clip.samples.authapi.hose.Hose;
+import ch.clip.samples.authapi.schuhe.Schuhe;
+import ch.clip.samples.authapi.shirt.Shirt;
 import ch.clip.samples.authapi.user.AppUser;
 
 import javax.persistence.*;
+import java.util.*;
 
 @Entity
 public class Wunschliste {
@@ -20,6 +24,30 @@ public class Wunschliste {
     public Wunschliste() {
     }
 
+    @ManyToMany
+    @JoinTable(
+            name = "selected_hosen",
+            joinColumns = @JoinColumn(name = "wunschliste_id"),
+            inverseJoinColumns = @JoinColumn(name = "hosen_id")
+    )
+    private Set<Hose> selectedHosen;
+
+    @ManyToMany
+    @JoinTable(
+            name = "selected_shirts",
+            joinColumns = @JoinColumn(name = "wunschliste_id"),
+            inverseJoinColumns = @JoinColumn(name = "shirt_id")
+    )
+    private Set<Shirt> selectedShirts;
+
+    @ManyToMany
+    @JoinTable(
+            name = "selected_schuhe",
+            joinColumns = @JoinColumn(name = "wunschliste_id"),
+            inverseJoinColumns = @JoinColumn(name = "schuhe_id")
+    )
+    private Set<Schuhe> selectedSchuhe;
+
     public Wunschliste(AppUser user) {
         this.user = user;
     }
@@ -35,4 +63,10 @@ public class Wunschliste {
     public void setUser(AppUser user) {
         this.user = user;
     }
+
+    public void setSelectedHosen(Set<Hose> selectedHosen) {
+        this.selectedHosen = selectedHosen;
+    }
+
+
 }

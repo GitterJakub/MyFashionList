@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34378f4a-caca-4613-9202-a7198ce97dd7" name="Default Changelist" comment="Hinzugefügt  Hose, Schuhe und Shirt. Mit den jeweiligen Controllern und Repositorys. Noch keine Fremdschlüssel.">
+    <list default="true" id="34378f4a-caca-4613-9202-a7198ce97dd7" name="Default Changelist" comment="One to One Verbindung mit user un der Wunschliste Beispiel ist inkl.">
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
@@ -13,9 +13,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ch/clip/samples/authapi/SpringbootAuthUpdatedApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ch/clip/samples/authapi/SpringbootAuthUpdatedApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ch/clip/samples/authapi/user/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ch/clip/samples/authapi/user/AppUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/SpringbootAuthUpdatedApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/SpringbootAuthUpdatedApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/user/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/user/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/hose/Hose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/hose/Hose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/schuhe/Schuhe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/schuhe/Schuhe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/shirt/Shirt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/shirt/Shirt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/wunschliste/Wunschliste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/wunschliste/Wunschliste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -319,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657870763286</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="One to One Verbindung mit user un der Wunschliste Beispiel ist inkl.">
+      <created>1657877022881</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657877022881</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +348,8 @@
     <MESSAGE value="Setup Project" />
     <MESSAGE value="Wunschliste hinzugefügt mit Controller und Repository" />
     <MESSAGE value="Hinzugefügt  Hose, Schuhe und Shirt. Mit den jeweiligen Controllern und Repositorys. Noch keine Fremdschlüssel." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hinzugefügt  Hose, Schuhe und Shirt. Mit den jeweiligen Controllern und Repositorys. Noch keine Fremdschlüssel." />
+    <MESSAGE value="One to One Verbindung mit user un der Wunschliste Beispiel ist inkl." />
+    <option name="LAST_COMMIT_MESSAGE" value="One to One Verbindung mit user un der Wunschliste Beispiel ist inkl." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/springboot_auth_updated$SpringbootAuthUpdatedApplication.ic" NAME="SpringbootAuthUpdatedApplication Coverage Results" MODIFIED="1594140624855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

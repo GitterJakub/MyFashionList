@@ -1,10 +1,10 @@
 package ch.clip.samples.authapi.hose;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import ch.clip.samples.authapi.wunschliste.Wunschliste;
+
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Hose {
@@ -20,6 +20,9 @@ public class Hose {
     private String marke;
 
     private double groesse;
+
+    @ManyToMany(mappedBy = "selectedHosen")
+    Set<Wunschliste> wunschlisten;
 
     public Hose(String name, String farbe, String marke, double groesse) {
         this.name = name;

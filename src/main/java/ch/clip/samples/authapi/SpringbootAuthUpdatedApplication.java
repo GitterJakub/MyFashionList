@@ -20,6 +20,9 @@ import ch.clip.samples.authapi.task.TaskRepository;
 import ch.clip.samples.authapi.user.AppUser;
 import ch.clip.samples.authapi.user.AppUserRepository;
 
+import java.util.HashSet;
+import java.util.Set;
+
 // https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
 // https://github.com/auth0/java-jwt
 @SpringBootApplication
@@ -92,8 +95,14 @@ public class SpringbootAuthUpdatedApplication {
 
 			Wunschliste w1 = new Wunschliste();
 			w1.setUser(u5);
+			Set<Hose> hoseSet = new HashSet<>();
+			hoseSet.add(adidas);
+
+			w1.setSelectedHosen(hoseSet);
+
 			wunschlisteRepository.save(w1);
 			userRepository.save(u5);
+
 
 
 			taskUserService.addTask(u4, 3L);

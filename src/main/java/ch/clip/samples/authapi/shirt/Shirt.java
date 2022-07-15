@@ -1,9 +1,9 @@
 package ch.clip.samples.authapi.shirt;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import ch.clip.samples.authapi.wunschliste.Wunschliste;
+
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Shirt {
@@ -16,6 +16,8 @@ public class Shirt {
     private String farbe;
     private String marke;
     private double groesse;
+    @ManyToMany(mappedBy = "selectedShirts")
+    Set<Wunschliste> wunschlisten;
 
     public Shirt(String name, String farbe, String marke, double groesse) {
         this.name = name;
