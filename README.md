@@ -1,3 +1,10 @@
+#Über das Projekt
+Das Projekt ist ein Backend und soll Usern ermöglichen eine Wunschliste mit Kleidunsstücken zu erstellen.
+Um die Applikation zu starten benötigen Sie eine Datenbank. Bedient wurde diese mit phpmyadmin das Passwort und der Nutzername steht in den application.properties.
+Passwort: zli123 Nutzername: root
+Projekt startet mit gradle --> ./gradlew run
+
+
 # Developing and Securing RESTful APIs with Spring Boot
 This sample application shows how to develop a Restful api with
 SpringBoot and secure it using Spring Security via JSON Web Tokens.
