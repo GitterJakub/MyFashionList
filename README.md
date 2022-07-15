@@ -1,4 +1,4 @@
-#Über das Projekt
+# Über das Projekt
 Das Projekt ist ein Backend und soll Usern ermöglichen eine Wunschliste mit Kleidunsstücken zu erstellen.
 Um die Applikation zu starten benötigen Sie eine Datenbank. Bedient wurde diese mit phpmyadmin das Passwort und der Nutzername steht in den application.properties.
 Passwort: zli123 Nutzername: root
