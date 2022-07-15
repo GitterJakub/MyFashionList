@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34378f4a-caca-4613-9202-a7198ce97dd7" name="Default Changelist" comment="Many to Many Verbindungen gemacht Hose, Shirt, Schuhe und Wunschliste. &#10;Beispiel daten mit adidas Hose gemacht.">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/wunschliste/Wunschliste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/wunschliste/Wunschliste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/wunschliste/WunschlisteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/clip/samples/authapi/wunschliste/WunschlisteController.java" afterDir="false" />
-    </list>
+    <list default="true" id="34378f4a-caca-4613-9202-a7198ce97dd7" name="Default Changelist" comment="Post und Put Methode in der Wunschliste hinzugefügt. Mit Postman geprüft. Resultat OK." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -328,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657885447460</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Post und Put Methode in der Wunschliste hinzugefügt. Mit Postman geprüft. Resultat OK.">
+      <created>1657888436355</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657888436355</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +350,8 @@
     <MESSAGE value="Hinzugefügt  Hose, Schuhe und Shirt. Mit den jeweiligen Controllern und Repositorys. Noch keine Fremdschlüssel." />
     <MESSAGE value="One to One Verbindung mit user un der Wunschliste Beispiel ist inkl." />
     <MESSAGE value="Many to Many Verbindungen gemacht Hose, Shirt, Schuhe und Wunschliste. &#10;Beispiel daten mit adidas Hose gemacht." />
-    <option name="LAST_COMMIT_MESSAGE" value="Many to Many Verbindungen gemacht Hose, Shirt, Schuhe und Wunschliste. &#10;Beispiel daten mit adidas Hose gemacht." />
+    <MESSAGE value="Post und Put Methode in der Wunschliste hinzugefügt. Mit Postman geprüft. Resultat OK." />
+    <option name="LAST_COMMIT_MESSAGE" value="Post und Put Methode in der Wunschliste hinzugefügt. Mit Postman geprüft. Resultat OK." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/springboot_auth_updated$SpringbootAuthUpdatedApplication.ic" NAME="SpringbootAuthUpdatedApplication Coverage Results" MODIFIED="1594140624855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
